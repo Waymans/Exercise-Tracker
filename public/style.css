@@ -1,0 +1,67 @@
+/****** Main Styling ******/
+
+body {
+	font-family: 'Monospace', sans-serif;
+	font-size: 16px;
+	color: #222;
+	background-color: lightsteelblue;
+	text-align: center;
+	line-height: 2em
+}
+
+.container {
+	padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.footer {
+	margin-top: 0px;
+}
+
+code {
+  font-family: monospace;
+  padding: 5px;
+  color: black;
+  background-color: bisque;
+  border: 1px solid maroon;
+}
+a {
+	color: maroon;
+}
+
+form {
+  border: solid 1px black;
+  border-radius: 5px;
+  margin: 10px auto;
+  padding: 20px;
+  max-width: 600px;
+}
+
+label {
+  margin-right: 10px;
+}
+
+input {
+  padding: 5px;
+}
+
+input[type=text] {
+  width: 220px;
+  text-align: center;
+}
+
+input[type=submit] {
+  font-size: 16px;
+  border-radius: 3px;
+  background-color: #E4F1FE;
+  border: 1px solid grey;
+  box-shadow: 2px 2px #999;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #FFFEC4;
+}

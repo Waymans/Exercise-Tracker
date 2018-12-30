@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>Exercise Tracker | Free Code Camp</title>
+      <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+      <link href="style.css" rel="stylesheet" type="text/css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta charset="utf-8">
+   </head>
+
+   <body>
+      <div class="container">
+         <h1>Exercise tracker for FCC</h1>
+          <form action="/api/exercise/new-user" method="post">
+            <h3>Create a New User</h3>
+            <p><code>POST /api/exercise/new-user</code></p>
+            <input id="uname" type="text" name="username" placeholder="username" required pattern="[A-z0-9]{3,15}" title="[A-z0-9]{3,15}">
+            <input type="submit" value="Submit">
+          </form>
+          <form action="/api/exercise/add" method="post">
+            <h3>Add exercises</h3>
+            <p><code>POST /api/exercise/add</code></p>
+            <input id="uid" type="text" name="userId" placeholder="userId*" required pattern="[A-z0-9]{20,30}" title="[A-z0-9]{20,30}">
+            <input id="desc" type="text" name="description" placeholder="description*" minlength="3" maxlength="20" required>
+            <input id="dur" type="text" name="duration" placeholder="duration* (mins.)" pattern="\d{1,3}" required title="\d{1,3}">
+            <input id="dat" type="text" name="date" placeholder="date (yyyy-mm-dd)" pattern="^\d{4}-\d{1,2}-\d{1,2}$" title="^\d{4}-\d{1,2}-\d{1,2}$">
+            <input type="submit" value="Submit">
+          </form>
+          <p><strong>GET users's exercise log: </strong><code>GET /api/exercise/log?{userId}[&amp;from][&amp;to][&amp;limit]</code></p>
+          <p><strong>{ }</strong> = required; <strong>[ ]</strong> = optional; <strong>from, to</strong> = dates (yyyy-mm-dd); <strong>limit</strong> = number</p>
+        <div class="footer">
+          <p>Check out my other projects on <a href="http://www.codepen.io/Waymans" target="_blank">Codepen</a>.</p>     
+        </div>
+      </div>
+   </body>
+
+</html>
